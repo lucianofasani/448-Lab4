@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script type = "text/javascript" src = "formChecker.js"></script>
+        <title>Pokemart</title>
+        <style></style>
+    </head>
+
+    <body>
+        <br><br><br><br><br><br>
+
+        <center>
+
+        <p class="title">POKEMART</p>
+
+        <form name="myForm" action="customerBackend.php" onsubmit="return validateFields()" method="Post">
+
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img class="item" src="pokeball.png">
+                        <br>
+                        <span class="itemName">Pokeball:</span>
+                        <span class="money"> $25</span>
+                        <br><br>
+                        Quantity:
+                        <input class="item" type="number" min="0" value="0" name="pokeball" id="pokeball">
+                        </input>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <img class="item" src="potion.png">
+                        <br>
+                        <span class="itemName">Potion:</span>
+                        <span class="money"> $50</span>
+                        <br><br>
+                        Quantity:
+                        <input class="item" type="number" min="0" value="0" name="potion" id="potion">
+                        </input>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <img class="item" src="rareCandy.png">
+                        <br>
+                        <span class="itemName">Rare Candy:</span>
+                        <span class="money"> $100</span>
+                        <br><br>
+                        Quantity:
+                        <input class="item" type="number" min="0" value="0" name="rareCandy" id="rareCandy">
+                        </input>
+
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            Shipping:
+            <input type="radio" name="shipping" value="0" checked>7-day shipping - FREE</input>
+            <br>
+            <input type="radio" name="shipping" value="5">3-day shipping - $5</input>
+            <br>
+            <input type="radio" name="shipping" value="50">Overnight Delivery - $50</input>
+
+            <br><br>
+
+            Username(e-mail):
+            <input type="email" name="email" id="email">
+            </input>
+            <br>
+
+            Password:
+            <input type="password" name="password" id="password">
+            </input>
+        </p>
+
+        <input type="submit" value="Confirm Order!">
+        <input type="reset" value="Reset Order">
+
+        </form>
+
+        </center>
+
+    </body>
+
+</html>
